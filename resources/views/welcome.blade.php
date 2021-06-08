@@ -61,8 +61,8 @@
       <div class="content">
         <div class="title m-b-md">Product Store</div>
         <div class="links">
-          <a href="{{ config('app.url')}}/products/create">Create Product</a>
-          <a href="{{ config('app.url')}}/products">View Products</a>
+          <a href="{{ config('resources\views\createproduct.blade.php')}}/products/create">Create Product</a>
+          <a href="{{ config('resources\views\viewproducts.blade.php')}}/products">View Products</a>
         </div>
       </div>
     </div>

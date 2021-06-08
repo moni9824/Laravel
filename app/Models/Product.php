@@ -7,19 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory;
+    namespace App;
 
-    protected $table = 'products';
-    public $timestamps = true;
+    use Illuminate\Database\Eloquent\Model;
 
-    protected $casts = [
-        'price' => 'float'
-    ];
+    class Product extends Model {
 
-    protected $fillable = [
-        'name',
-        'description',
-        'price',
-        'created_at'
-    ];
+        protected $fillable = [
+           'name',
+           'count',
+           'price',
+           'description',
+        ];
 }
